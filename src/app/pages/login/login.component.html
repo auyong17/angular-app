@@ -1,0 +1,12 @@
+<body>
+    <form class="login">
+      <h1>Welcome!</h1>
+      <div>
+        <input type="email" class="input" id="user" placeholder="Email" [(ngModel)]="loginObj.EmailId" name="EmailId" required>
+      </div>
+      <div>
+        <input type="password" class="input" id="pass" placeholder="Password" [(ngModel)]="loginObj.Password" name="Password" required>
+      </div>
+      <button type="button" (click)="onLogin()"> Login </button>
+    </form>
+  </body>
